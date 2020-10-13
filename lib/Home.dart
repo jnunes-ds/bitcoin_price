@@ -9,7 +9,14 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Container(
+        padding: EdgeInsets.all(32),
+        child: Center(
+          child: Column(
 
+          ),
+        ),
+      ),
     );
   }
 }
