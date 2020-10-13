@@ -20,6 +20,7 @@ class _HomeState extends State<Home> {
         padding: EdgeInsets.all(32),
         child: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset("images/bitcoin.png"),
               Padding(
@@ -41,7 +42,7 @@ class _HomeState extends State<Home> {
                 ),
                 color: Colors.orange,
                 padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
-                onPressed: (){},
+                onPressed: _recoverPrice,
               )
             ],
           ),
