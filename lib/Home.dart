@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'dart:async';
+import 'dart:convert';
 
 class Home extends StatefulWidget {
   @override
@@ -9,8 +12,8 @@ class _HomeState extends State<Home> {
 
   String _price = "0";
 
-  void _recoverPrice(){
-
+  void _recoverPrice() async {
+    String url = "https://blockchain.info/ticker";
   }
 
   @override
