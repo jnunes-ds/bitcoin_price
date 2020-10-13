@@ -13,7 +13,13 @@ class _HomeState extends State<Home> {
   String _price = "0";
 
   void _recoverPrice() async {
+
     String url = "https://blockchain.info/ticker";
+    http.Response response = await http.get(url);
+
+    Map<String, dynamic> retorno = json.decode(response.body);
+    print("Resultado: " + retorno.toString());
+
   }
 
   @override
