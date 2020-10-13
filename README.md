@@ -1,6 +1,6 @@
 # bitcoin_price
 
-A new Flutter application.
+A new Flutter application. The app must calculate the price of bitcoin from RBR currency (Brazilian Real).
 
 ## Getting Started
 
