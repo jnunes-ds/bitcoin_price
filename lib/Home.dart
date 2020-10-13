@@ -21,8 +21,20 @@ class _HomeState extends State<Home> {
               Padding(
                 padding: EdgeInsets.only(top: 30),
                 child: Text(
-                  "R\$" + _price
+                  "R\$" + _price,
+                  style: TextStyle(
+                    fontSize: 35
+                  )
                 )
+              ),
+              RaisedButton(
+                child: Text(
+                    "Check Again",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white
+                  ),
+                ),
               )
             ],
           ),
