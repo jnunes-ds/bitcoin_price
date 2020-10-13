@@ -18,6 +18,9 @@ class _HomeState extends State<Home> {
     http.Response response = await http.get(url);
 
     Map<String, dynamic> returning = json.decode(response.body);
+    setState(() {
+      _price = returning["BRL"]["buy"].toString();
+    });
     print("Resultado: " + returning["BRL"]["buy"].toString());
 
   }
