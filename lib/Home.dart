@@ -35,6 +35,8 @@ class _HomeState extends State<Home> {
                     color: Colors.white
                   ),
                 ),
+                color: Colors.orange,
+                padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
               )
             ],
           ),
