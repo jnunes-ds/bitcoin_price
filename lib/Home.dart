@@ -17,8 +17,8 @@ class _HomeState extends State<Home> {
     String url = "https://blockchain.info/ticker";
     http.Response response = await http.get(url);
 
-    Map<String, dynamic> retorno = json.decode(response.body);
-    print("Resultado: " + retorno.toString());
+    Map<String, dynamic> returning = json.decode(response.body);
+    print("Resultado: " + returning["BRL"]["buy"].toString());
 
   }
 
