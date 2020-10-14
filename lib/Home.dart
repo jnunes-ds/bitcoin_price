@@ -10,18 +10,31 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
 
-  String _price = "0";
+  String _price = "Value";
 
-  void _recoverPrice() async {
+  void _recoverPriceBlr() async {
 
     String url = "https://blockchain.info/ticker";
     http.Response response = await http.get(url);
 
     Map<String, dynamic> returning = json.decode(response.body);
     setState(() {
-      _price = returning["BRL"]["buy"].toString();
+      _price = "R\$ " + returning["BRL"]["buy"].toString();
     });
     print("Resultado: " + returning["BRL"]["buy"].toString());
+
+  }
+
+  void _recoverPriceUsd() async {
+
+    String url = "https://blockchain.info/ticker";
+    http.Response response = await http.get(url);
+
+    Map<String, dynamic> returning = json.decode(response.body);
+    setState(() {
+      _price = "U\$ " + returning["USD"]["buy"].toString();
+    });
+    print("Resultado: " + returning["USD"]["buy"].toString());
 
   }
 
@@ -35,9 +48,9 @@ class _HomeState extends State<Home> {
           children: [
             Image.asset("images/bitcoin.png"),
             Text(
-              "value",
+              _price,
               style: TextStyle(
-                fontSize: 60
+                fontSize: 40
               ),
             ),
             Row(
@@ -53,7 +66,7 @@ class _HomeState extends State<Home> {
                   ),
                   color: Colors.orange,
                   padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
-                  onPressed: (){},
+                  onPressed: _recoverPriceBlr,
                 ),
                 RaisedButton(
                   child: Text(
@@ -65,7 +78,7 @@ class _HomeState extends State<Home> {
                   ),
                   color: Colors.orange,
                   padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
-                  onPressed: (){},
+                  onPressed: _recoverPriceUsd,
                 )
               ],
             )
