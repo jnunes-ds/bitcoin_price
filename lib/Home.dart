@@ -44,16 +44,28 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 RaisedButton(
-                  padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
                   child: Text(
-                    "Real"
+                    "Real",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white
+                    ),
                   ),
+                  color: Colors.orange,
+                  padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
+                  onPressed: (){},
                 ),
                 RaisedButton(
-                  padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
                   child: Text(
-                    "Dollar"
+                    "Dollar",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white
+                    ),
                   ),
+                  color: Colors.orange,
+                  padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
+                  onPressed: (){},
                 )
               ],
             )
