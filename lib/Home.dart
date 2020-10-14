@@ -41,9 +41,20 @@ class _HomeState extends State<Home> {
               ),
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                RaisedButton(),
-                RaisedButton()
+                RaisedButton(
+                  padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
+                  child: Text(
+                    "Real"
+                  ),
+                ),
+                RaisedButton(
+                  padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
+                  child: Text(
+                    "Dollar"
+                  ),
+                )
               ],
             )
           ],
