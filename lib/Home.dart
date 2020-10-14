@@ -31,6 +31,7 @@ class _HomeState extends State<Home> {
       body: Container(
         padding: EdgeInsets.all(32),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset("images/bitcoin.png"),
             Text(
@@ -38,6 +39,12 @@ class _HomeState extends State<Home> {
               style: TextStyle(
                 fontSize: 60
               ),
+            ),
+            Row(
+              children: [
+                RaisedButton(),
+                RaisedButton()
+              ],
             )
           ],
         ),
