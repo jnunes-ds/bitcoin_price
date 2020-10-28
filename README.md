@@ -1,16 +1,17 @@
 # bitcoin_price
 
-A new Flutter application. The app must calculate the price of bitcoin from BRL currency (Brazilian Real) and USD (American Dollar).
+>A new Flutter application. The app must calculate the price of bitcoin from BRL currency (Brazilian Real) and USD (American Dollar).
 
-## Getting Started
+This app whas made to practice my skills in Flutter Language. 
 
-This project is a starting point for a Flutter application.
+![](images/bprice.png)
 
-A few resources to get you started if this is your first Flutter project:
+#Meta
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Júnior Nunes 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[linkedin](https://www.linkedin.com/in/j%C3%BAnior-nunes-35a525170/)
+
+denisonprobable13@gmail.com
+
+[GitHub](https://github.com/jnunes-ds)
